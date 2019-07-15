@@ -25,12 +25,11 @@ namespace HyTestBuilderTest
             InitializeComponent();
             timer.Interval = 100;
             timer.Tick += Timer_Tick;
-            timer.Start();
+            //timer.Start();
         }
 
         private void Timer_Tick(object sender, EventArgs e)
         {
-            this.textBox9.Text = server.InstantRead<double>("AI4").ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)

@@ -73,6 +73,17 @@ namespace HyTestBuilderTestConfig
             Port.Visible = true;
             this.dataGridView2.Columns.Add(Port);
 
+            DataGridViewTextBoxColumn MaxValue = new DataGridViewTextBoxColumn();
+            MaxValue.DataPropertyName = "变量上限";
+            MaxValue.HeaderText = "变量上限";
+            MaxValue.Visible = true;
+            this.dataGridView2.Columns.Add(MaxValue);
+
+            DataGridViewTextBoxColumn MinValue = new DataGridViewTextBoxColumn();
+            MinValue.DataPropertyName = "变量下限";
+            MinValue.HeaderText = "变量下限";
+            MinValue.Visible = true;
+            this.dataGridView2.Columns.Add(MinValue);
         }
 
         //判断配置文件是否存在
