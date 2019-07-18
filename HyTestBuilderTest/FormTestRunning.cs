@@ -1,20 +1,14 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using static LBSoft.IndustrialCtrls.Leds.LBLed;
 using HyTestRTDataService.RunningMode;
+using HyTestRTDataService;
 
 namespace HyTestBuilderTest
 {
     public partial class FormTestRunning : Form
     {
-        RunningServer server = RunningServer.getServer();
+        RunningServer server;
 
         bool[] state = new bool[8];
 
@@ -25,6 +19,7 @@ namespace HyTestBuilderTest
             InitializeComponent();
             timer.Interval = 100;
             timer.Tick += Timer_Tick;
+            server = RunningServer.getServer();
             //timer.Start();
         }
 
@@ -92,7 +87,7 @@ namespace HyTestBuilderTest
         private void button9_Click(object sender, EventArgs e)
         {
             string valueStr = this.textBox1.Text.Trim();
-            if(valueStr!="" || valueStr!=null)
+            if(valueStr!="" && valueStr!=null)
             {
                 //还应该判断是不是非double
                 server.InstantWrite("AO1", double.Parse(valueStr));
