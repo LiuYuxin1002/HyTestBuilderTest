@@ -12,19 +12,11 @@ namespace HyTestBuilderTest
 
         bool[] state = new bool[8];
 
-        Timer timer = new Timer();
-
         public FormTestRunning()
         {
             InitializeComponent();
-            timer.Interval = 100;
-            timer.Tick += Timer_Tick;
             server = RunningServer.getServer();
-            //timer.Start();
-        }
-
-        private void Timer_Tick(object sender, EventArgs e)
-        {
+            server.Run();
         }
 
         private void button1_Click(object sender, EventArgs e)
