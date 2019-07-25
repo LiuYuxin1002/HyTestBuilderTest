@@ -1,2 +1,4 @@
 *.db
 Debug
+*.opendb
+/HyTestBuilderTest/bin/log/2019-07-24.txt

@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTestRunning));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -37,15 +39,23 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lbLed8 = new LBSoft.IndustrialCtrls.Leds.LBLed();
+            this.lbLed7 = new LBSoft.IndustrialCtrls.Leds.LBLed();
+            this.lbLed6 = new LBSoft.IndustrialCtrls.Leds.LBLed();
+            this.lbLed5 = new LBSoft.IndustrialCtrls.Leds.LBLed();
+            this.lbLed4 = new LBSoft.IndustrialCtrls.Leds.LBLed();
+            this.lbLed3 = new LBSoft.IndustrialCtrls.Leds.LBLed();
+            this.lbLed2 = new LBSoft.IndustrialCtrls.Leds.LBLed();
+            this.lbLed1 = new LBSoft.IndustrialCtrls.Leds.LBLed();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.button16 = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button15 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.button14 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.button13 = new System.Windows.Forms.Button();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.dataScanner4 = new LBIndustrialCtrls.AnalogLable.DataScanner();
+            this.dataScanner3 = new LBIndustrialCtrls.AnalogLable.DataScanner();
+            this.dataScanner2 = new LBIndustrialCtrls.AnalogLable.DataScanner();
+            this.dataScanner1 = new LBIndustrialCtrls.AnalogLable.DataScanner();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.button12 = new System.Windows.Forms.Button();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.button11 = new System.Windows.Forms.Button();
@@ -54,10 +64,6 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.button9 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -71,23 +77,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.dataScanner8 = new LBIndustrialCtrls.AnalogLable.DataScanner();
-            this.dataScanner7 = new LBIndustrialCtrls.AnalogLable.DataScanner();
-            this.dataScanner6 = new LBIndustrialCtrls.AnalogLable.DataScanner();
-            this.dataScanner5 = new LBIndustrialCtrls.AnalogLable.DataScanner();
-            this.dataScanner4 = new LBIndustrialCtrls.AnalogLable.DataScanner();
-            this.dataScanner3 = new LBIndustrialCtrls.AnalogLable.DataScanner();
-            this.dataScanner2 = new LBIndustrialCtrls.AnalogLable.DataScanner();
-            this.dataScanner1 = new LBIndustrialCtrls.AnalogLable.DataScanner();
             this.lbLed9 = new LBSoft.IndustrialCtrls.Leds.LBLed();
             this.lbLed10 = new LBSoft.IndustrialCtrls.Leds.LBLed();
             this.lbLed11 = new LBSoft.IndustrialCtrls.Leds.LBLed();
@@ -96,18 +85,12 @@
             this.lbLed14 = new LBSoft.IndustrialCtrls.Leds.LBLed();
             this.lbLed15 = new LBSoft.IndustrialCtrls.Leds.LBLed();
             this.lbLed16 = new LBSoft.IndustrialCtrls.Leds.LBLed();
-            this.lbLed8 = new LBSoft.IndustrialCtrls.Leds.LBLed();
-            this.lbLed7 = new LBSoft.IndustrialCtrls.Leds.LBLed();
-            this.lbLed6 = new LBSoft.IndustrialCtrls.Leds.LBLed();
-            this.lbLed5 = new LBSoft.IndustrialCtrls.Leds.LBLed();
-            this.lbLed4 = new LBSoft.IndustrialCtrls.Leds.LBLed();
-            this.lbLed3 = new LBSoft.IndustrialCtrls.Leds.LBLed();
-            this.lbLed2 = new LBSoft.IndustrialCtrls.Leds.LBLed();
-            this.lbLed1 = new LBSoft.IndustrialCtrls.Leds.LBLed();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.richTextBoxLog = new System.Windows.Forms.RichTextBox();
+            this.lightningChartUltimate1 = new Arction.WinForms.Charting.LightningChartUltimate();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -215,16 +198,152 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "EtherCAT写测试";
             // 
+            // lbLed8
+            // 
+            this.lbLed8.BackColor = System.Drawing.Color.Transparent;
+            this.lbLed8.BlinkInterval = 500;
+            this.lbLed8.Label = "DO8";
+            this.lbLed8.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
+            this.lbLed8.LedColor = System.Drawing.Color.Chartreuse;
+            this.lbLed8.LedSize = new System.Drawing.SizeF(18F, 18F);
+            this.lbLed8.Location = new System.Drawing.Point(150, 208);
+            this.lbLed8.Name = "lbLed8";
+            this.lbLed8.Renderer = null;
+            this.lbLed8.Size = new System.Drawing.Size(30, 23);
+            this.lbLed8.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed8.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
+            this.lbLed8.TabIndex = 15;
+            this.lbLed8.VarName = "DO8";
+            // 
+            // lbLed7
+            // 
+            this.lbLed7.BackColor = System.Drawing.Color.Transparent;
+            this.lbLed7.BlinkInterval = 500;
+            this.lbLed7.Label = "";
+            this.lbLed7.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
+            this.lbLed7.LedColor = System.Drawing.Color.Chartreuse;
+            this.lbLed7.LedSize = new System.Drawing.SizeF(18F, 18F);
+            this.lbLed7.Location = new System.Drawing.Point(10, 208);
+            this.lbLed7.Name = "lbLed7";
+            this.lbLed7.Renderer = null;
+            this.lbLed7.Size = new System.Drawing.Size(30, 23);
+            this.lbLed7.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed7.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
+            this.lbLed7.TabIndex = 14;
+            this.lbLed7.VarName = "DO7";
+            // 
+            // lbLed6
+            // 
+            this.lbLed6.BackColor = System.Drawing.Color.Transparent;
+            this.lbLed6.BlinkInterval = 500;
+            this.lbLed6.Label = "";
+            this.lbLed6.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
+            this.lbLed6.LedColor = System.Drawing.Color.Chartreuse;
+            this.lbLed6.LedSize = new System.Drawing.SizeF(18F, 18F);
+            this.lbLed6.Location = new System.Drawing.Point(150, 156);
+            this.lbLed6.Name = "lbLed6";
+            this.lbLed6.Renderer = null;
+            this.lbLed6.Size = new System.Drawing.Size(30, 23);
+            this.lbLed6.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed6.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
+            this.lbLed6.TabIndex = 13;
+            this.lbLed6.VarName = "DO6";
+            // 
+            // lbLed5
+            // 
+            this.lbLed5.BackColor = System.Drawing.Color.Transparent;
+            this.lbLed5.BlinkInterval = 500;
+            this.lbLed5.Label = "";
+            this.lbLed5.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
+            this.lbLed5.LedColor = System.Drawing.Color.Chartreuse;
+            this.lbLed5.LedSize = new System.Drawing.SizeF(18F, 18F);
+            this.lbLed5.Location = new System.Drawing.Point(10, 153);
+            this.lbLed5.Name = "lbLed5";
+            this.lbLed5.Renderer = null;
+            this.lbLed5.Size = new System.Drawing.Size(30, 23);
+            this.lbLed5.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed5.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
+            this.lbLed5.TabIndex = 12;
+            this.lbLed5.VarName = "DO5";
+            // 
+            // lbLed4
+            // 
+            this.lbLed4.BackColor = System.Drawing.Color.Transparent;
+            this.lbLed4.BlinkInterval = 500;
+            this.lbLed4.Label = "";
+            this.lbLed4.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
+            this.lbLed4.LedColor = System.Drawing.Color.Chartreuse;
+            this.lbLed4.LedSize = new System.Drawing.SizeF(18F, 18F);
+            this.lbLed4.Location = new System.Drawing.Point(150, 104);
+            this.lbLed4.Name = "lbLed4";
+            this.lbLed4.Renderer = null;
+            this.lbLed4.Size = new System.Drawing.Size(30, 23);
+            this.lbLed4.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed4.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
+            this.lbLed4.TabIndex = 11;
+            this.lbLed4.VarName = "DO4";
+            // 
+            // lbLed3
+            // 
+            this.lbLed3.BackColor = System.Drawing.Color.Transparent;
+            this.lbLed3.BlinkInterval = 500;
+            this.lbLed3.Label = "";
+            this.lbLed3.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
+            this.lbLed3.LedColor = System.Drawing.Color.Chartreuse;
+            this.lbLed3.LedSize = new System.Drawing.SizeF(18F, 18F);
+            this.lbLed3.Location = new System.Drawing.Point(10, 104);
+            this.lbLed3.Name = "lbLed3";
+            this.lbLed3.Renderer = null;
+            this.lbLed3.Size = new System.Drawing.Size(30, 23);
+            this.lbLed3.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed3.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
+            this.lbLed3.TabIndex = 10;
+            this.lbLed3.VarName = "DO3";
+            // 
+            // lbLed2
+            // 
+            this.lbLed2.BackColor = System.Drawing.Color.Transparent;
+            this.lbLed2.BlinkInterval = 500;
+            this.lbLed2.Label = "";
+            this.lbLed2.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
+            this.lbLed2.LedColor = System.Drawing.Color.Chartreuse;
+            this.lbLed2.LedSize = new System.Drawing.SizeF(18F, 18F);
+            this.lbLed2.Location = new System.Drawing.Point(150, 52);
+            this.lbLed2.Name = "lbLed2";
+            this.lbLed2.Renderer = null;
+            this.lbLed2.Size = new System.Drawing.Size(30, 23);
+            this.lbLed2.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed2.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
+            this.lbLed2.TabIndex = 9;
+            this.lbLed2.VarName = "DO2";
+            // 
+            // lbLed1
+            // 
+            this.lbLed1.BackColor = System.Drawing.Color.Transparent;
+            this.lbLed1.BlinkInterval = 500;
+            this.lbLed1.Label = "";
+            this.lbLed1.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
+            this.lbLed1.LedColor = System.Drawing.Color.Chartreuse;
+            this.lbLed1.LedSize = new System.Drawing.SizeF(18F, 18F);
+            this.lbLed1.Location = new System.Drawing.Point(10, 52);
+            this.lbLed1.Name = "lbLed1";
+            this.lbLed1.Renderer = null;
+            this.lbLed1.Size = new System.Drawing.Size(30, 23);
+            this.lbLed1.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed1.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
+            this.lbLed1.TabIndex = 8;
+            this.lbLed1.VarName = "DO1";
+            // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.button16);
-            this.groupBox2.Controls.Add(this.textBox8);
-            this.groupBox2.Controls.Add(this.button15);
-            this.groupBox2.Controls.Add(this.textBox7);
-            this.groupBox2.Controls.Add(this.button14);
-            this.groupBox2.Controls.Add(this.textBox6);
-            this.groupBox2.Controls.Add(this.button13);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.dataScanner4);
+            this.groupBox2.Controls.Add(this.dataScanner3);
+            this.groupBox2.Controls.Add(this.dataScanner2);
+            this.groupBox2.Controls.Add(this.dataScanner1);
+            this.groupBox2.Controls.Add(this.label13);
+            this.groupBox2.Controls.Add(this.label14);
+            this.groupBox2.Controls.Add(this.label15);
+            this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Controls.Add(this.button12);
             this.groupBox2.Controls.Add(this.textBox4);
             this.groupBox2.Controls.Add(this.button11);
@@ -233,10 +352,6 @@
             this.groupBox2.Controls.Add(this.textBox2);
             this.groupBox2.Controls.Add(this.button9);
             this.groupBox2.Controls.Add(this.textBox1);
-            this.groupBox2.Controls.Add(this.label8);
-            this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.label2);
@@ -246,75 +361,75 @@
             this.groupBox2.Size = new System.Drawing.Size(389, 251);
             this.groupBox2.TabIndex = 17;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "EtherCAT写模拟量";
+            this.groupBox2.Text = "EtherCAT读写模拟量";
             // 
-            // button16
+            // dataScanner4
             // 
-            this.button16.Location = new System.Drawing.Point(353, 207);
-            this.button16.Name = "button16";
-            this.button16.Size = new System.Drawing.Size(25, 23);
-            this.button16.TabIndex = 47;
-            this.button16.Text = "W";
-            this.button16.UseVisualStyleBackColor = true;
-            this.button16.Click += new System.EventHandler(this.button16_Click);
+            this.dataScanner4.Location = new System.Drawing.Point(247, 211);
+            this.dataScanner4.Name = "dataScanner4";
+            this.dataScanner4.Size = new System.Drawing.Size(131, 22);
+            this.dataScanner4.TabIndex = 47;
+            this.dataScanner4.VarName = "AI4";
             // 
-            // textBox8
+            // dataScanner3
             // 
-            this.textBox8.Location = new System.Drawing.Point(247, 209);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 21);
-            this.textBox8.TabIndex = 46;
+            this.dataScanner3.Location = new System.Drawing.Point(65, 212);
+            this.dataScanner3.Name = "dataScanner3";
+            this.dataScanner3.Size = new System.Drawing.Size(131, 22);
+            this.dataScanner3.TabIndex = 46;
+            this.dataScanner3.VarName = "AI3";
             // 
-            // button15
+            // dataScanner2
             // 
-            this.button15.Location = new System.Drawing.Point(171, 209);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(25, 23);
-            this.button15.TabIndex = 45;
-            this.button15.Text = "W";
-            this.button15.UseVisualStyleBackColor = true;
-            this.button15.Click += new System.EventHandler(this.button15_Click);
+            this.dataScanner2.Location = new System.Drawing.Point(247, 159);
+            this.dataScanner2.Name = "dataScanner2";
+            this.dataScanner2.Size = new System.Drawing.Size(131, 22);
+            this.dataScanner2.TabIndex = 45;
+            this.dataScanner2.VarName = "AI2";
             // 
-            // textBox7
+            // dataScanner1
             // 
-            this.textBox7.Location = new System.Drawing.Point(65, 211);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 21);
-            this.textBox7.TabIndex = 44;
+            this.dataScanner1.Location = new System.Drawing.Point(65, 160);
+            this.dataScanner1.Name = "dataScanner1";
+            this.dataScanner1.Size = new System.Drawing.Size(131, 22);
+            this.dataScanner1.TabIndex = 44;
+            this.dataScanner1.VarName = "AI1";
             // 
-            // button14
+            // label13
             // 
-            this.button14.Location = new System.Drawing.Point(353, 156);
-            this.button14.Name = "button14";
-            this.button14.Size = new System.Drawing.Size(25, 23);
-            this.button14.TabIndex = 43;
-            this.button14.Text = "W";
-            this.button14.UseVisualStyleBackColor = true;
-            this.button14.Click += new System.EventHandler(this.button14_Click);
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(218, 213);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(23, 12);
+            this.label13.TabIndex = 43;
+            this.label13.Text = "AI4";
             // 
-            // textBox6
+            // label14
             // 
-            this.textBox6.Location = new System.Drawing.Point(247, 158);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 21);
-            this.textBox6.TabIndex = 42;
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(36, 213);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(23, 12);
+            this.label14.TabIndex = 42;
+            this.label14.Text = "AI3";
             // 
-            // button13
+            // label15
             // 
-            this.button13.Location = new System.Drawing.Point(171, 153);
-            this.button13.Name = "button13";
-            this.button13.Size = new System.Drawing.Size(25, 23);
-            this.button13.TabIndex = 41;
-            this.button13.Text = "W";
-            this.button13.UseVisualStyleBackColor = true;
-            this.button13.Click += new System.EventHandler(this.button13_Click);
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(218, 164);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(23, 12);
+            this.label15.TabIndex = 41;
+            this.label15.Text = "AI2";
             // 
-            // textBox5
+            // label16
             // 
-            this.textBox5.Location = new System.Drawing.Point(65, 155);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 21);
-            this.textBox5.TabIndex = 40;
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(36, 164);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(23, 12);
+            this.label16.TabIndex = 40;
+            this.label16.Text = "AI1";
             // 
             // button12
             // 
@@ -383,42 +498,6 @@
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(100, 21);
             this.textBox1.TabIndex = 32;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(218, 214);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(23, 12);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "AO8";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(36, 213);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(23, 12);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "AO7";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(218, 161);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(23, 12);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "AO6";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(36, 161);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(23, 12);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "AO5";
             // 
             // label4
             // 
@@ -553,167 +632,6 @@
             this.label17.TabIndex = 16;
             this.label17.Text = "DI1";
             // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.dataScanner8);
-            this.groupBox4.Controls.Add(this.dataScanner7);
-            this.groupBox4.Controls.Add(this.dataScanner6);
-            this.groupBox4.Controls.Add(this.dataScanner5);
-            this.groupBox4.Controls.Add(this.dataScanner4);
-            this.groupBox4.Controls.Add(this.dataScanner3);
-            this.groupBox4.Controls.Add(this.dataScanner2);
-            this.groupBox4.Controls.Add(this.dataScanner1);
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.label11);
-            this.groupBox4.Controls.Add(this.label12);
-            this.groupBox4.Controls.Add(this.label13);
-            this.groupBox4.Controls.Add(this.label14);
-            this.groupBox4.Controls.Add(this.label15);
-            this.groupBox4.Controls.Add(this.label16);
-            this.groupBox4.Location = new System.Drawing.Point(287, 285);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(389, 251);
-            this.groupBox4.TabIndex = 32;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "EtherCAT读模拟量测试";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(218, 214);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(23, 12);
-            this.label9.TabIndex = 31;
-            this.label9.Text = "AI8";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(36, 213);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(23, 12);
-            this.label10.TabIndex = 30;
-            this.label10.Text = "AI7";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(218, 161);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(23, 12);
-            this.label11.TabIndex = 29;
-            this.label11.Text = "AI6";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(36, 161);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(23, 12);
-            this.label12.TabIndex = 28;
-            this.label12.Text = "AI5";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(218, 106);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(23, 12);
-            this.label13.TabIndex = 27;
-            this.label13.Text = "AI4";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(36, 106);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(23, 12);
-            this.label14.TabIndex = 26;
-            this.label14.Text = "AI3";
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(218, 57);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(23, 12);
-            this.label15.TabIndex = 25;
-            this.label15.Text = "AI2";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(36, 57);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(23, 12);
-            this.label16.TabIndex = 24;
-            this.label16.Text = "AI1";
-            // 
-            // dataScanner8
-            // 
-            this.dataScanner8.Location = new System.Drawing.Point(247, 208);
-            this.dataScanner8.Name = "dataScanner8";
-            this.dataScanner8.Size = new System.Drawing.Size(131, 22);
-            this.dataScanner8.TabIndex = 39;
-            this.dataScanner8.VarName = "";
-            // 
-            // dataScanner7
-            // 
-            this.dataScanner7.Location = new System.Drawing.Point(65, 209);
-            this.dataScanner7.Name = "dataScanner7";
-            this.dataScanner7.Size = new System.Drawing.Size(131, 22);
-            this.dataScanner7.TabIndex = 38;
-            this.dataScanner7.VarName = "";
-            // 
-            // dataScanner6
-            // 
-            this.dataScanner6.Location = new System.Drawing.Point(247, 153);
-            this.dataScanner6.Name = "dataScanner6";
-            this.dataScanner6.Size = new System.Drawing.Size(131, 22);
-            this.dataScanner6.TabIndex = 37;
-            this.dataScanner6.VarName = "";
-            // 
-            // dataScanner5
-            // 
-            this.dataScanner5.Location = new System.Drawing.Point(65, 153);
-            this.dataScanner5.Name = "dataScanner5";
-            this.dataScanner5.Size = new System.Drawing.Size(131, 22);
-            this.dataScanner5.TabIndex = 36;
-            this.dataScanner5.VarName = "";
-            // 
-            // dataScanner4
-            // 
-            this.dataScanner4.Location = new System.Drawing.Point(247, 104);
-            this.dataScanner4.Name = "dataScanner4";
-            this.dataScanner4.Size = new System.Drawing.Size(131, 22);
-            this.dataScanner4.TabIndex = 35;
-            this.dataScanner4.VarName = "";
-            // 
-            // dataScanner3
-            // 
-            this.dataScanner3.Location = new System.Drawing.Point(65, 105);
-            this.dataScanner3.Name = "dataScanner3";
-            this.dataScanner3.Size = new System.Drawing.Size(131, 22);
-            this.dataScanner3.TabIndex = 34;
-            this.dataScanner3.VarName = "";
-            // 
-            // dataScanner2
-            // 
-            this.dataScanner2.Location = new System.Drawing.Point(247, 52);
-            this.dataScanner2.Name = "dataScanner2";
-            this.dataScanner2.Size = new System.Drawing.Size(131, 22);
-            this.dataScanner2.TabIndex = 33;
-            this.dataScanner2.VarName = "AI2";
-            // 
-            // dataScanner1
-            // 
-            this.dataScanner1.Location = new System.Drawing.Point(65, 53);
-            this.dataScanner1.Name = "dataScanner1";
-            this.dataScanner1.Size = new System.Drawing.Size(131, 22);
-            this.dataScanner1.TabIndex = 32;
-            this.dataScanner1.VarName = "AI1";
-            // 
             // lbLed9
             // 
             this.lbLed9.BackColor = System.Drawing.Color.Transparent;
@@ -828,7 +746,7 @@
             this.lbLed15.Name = "lbLed15";
             this.lbLed15.Renderer = null;
             this.lbLed15.Size = new System.Drawing.Size(30, 23);
-            this.lbLed15.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
+            this.lbLed15.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.On;
             this.lbLed15.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
             this.lbLed15.TabIndex = 9;
             this.lbLed15.VarName = "DI2";
@@ -850,147 +768,52 @@
             this.lbLed16.TabIndex = 8;
             this.lbLed16.VarName = "DI1";
             // 
-            // lbLed8
+            // groupBox4
             // 
-            this.lbLed8.BackColor = System.Drawing.Color.Transparent;
-            this.lbLed8.BlinkInterval = 500;
-            this.lbLed8.Label = "DO8";
-            this.lbLed8.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
-            this.lbLed8.LedColor = System.Drawing.Color.Chartreuse;
-            this.lbLed8.LedSize = new System.Drawing.SizeF(18F, 18F);
-            this.lbLed8.Location = new System.Drawing.Point(150, 208);
-            this.lbLed8.Name = "lbLed8";
-            this.lbLed8.Renderer = null;
-            this.lbLed8.Size = new System.Drawing.Size(30, 23);
-            this.lbLed8.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
-            this.lbLed8.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
-            this.lbLed8.TabIndex = 15;
-            this.lbLed8.VarName = null;
+            this.groupBox4.Location = new System.Drawing.Point(287, 285);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(389, 251);
+            this.groupBox4.TabIndex = 32;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "EtherCAT伺服控制测试";
             // 
-            // lbLed7
+            // richTextBoxLog
             // 
-            this.lbLed7.BackColor = System.Drawing.Color.Transparent;
-            this.lbLed7.BlinkInterval = 500;
-            this.lbLed7.Label = "";
-            this.lbLed7.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
-            this.lbLed7.LedColor = System.Drawing.Color.Chartreuse;
-            this.lbLed7.LedSize = new System.Drawing.SizeF(18F, 18F);
-            this.lbLed7.Location = new System.Drawing.Point(10, 208);
-            this.lbLed7.Name = "lbLed7";
-            this.lbLed7.Renderer = null;
-            this.lbLed7.Size = new System.Drawing.Size(30, 23);
-            this.lbLed7.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
-            this.lbLed7.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
-            this.lbLed7.TabIndex = 14;
-            this.lbLed7.VarName = "DO7";
+            this.richTextBoxLog.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.richTextBoxLog.Location = new System.Drawing.Point(682, 28);
+            this.richTextBoxLog.Name = "richTextBoxLog";
+            this.richTextBoxLog.Size = new System.Drawing.Size(411, 508);
+            this.richTextBoxLog.TabIndex = 33;
+            this.richTextBoxLog.Text = "";
             // 
-            // lbLed6
+            // lightningChartUltimate1
             // 
-            this.lbLed6.BackColor = System.Drawing.Color.Transparent;
-            this.lbLed6.BlinkInterval = 500;
-            this.lbLed6.Label = "";
-            this.lbLed6.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
-            this.lbLed6.LedColor = System.Drawing.Color.Chartreuse;
-            this.lbLed6.LedSize = new System.Drawing.SizeF(18F, 18F);
-            this.lbLed6.Location = new System.Drawing.Point(150, 156);
-            this.lbLed6.Name = "lbLed6";
-            this.lbLed6.Renderer = null;
-            this.lbLed6.Size = new System.Drawing.Size(30, 23);
-            this.lbLed6.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
-            this.lbLed6.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
-            this.lbLed6.TabIndex = 13;
-            this.lbLed6.VarName = "DO6";
-            // 
-            // lbLed5
-            // 
-            this.lbLed5.BackColor = System.Drawing.Color.Transparent;
-            this.lbLed5.BlinkInterval = 500;
-            this.lbLed5.Label = "";
-            this.lbLed5.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
-            this.lbLed5.LedColor = System.Drawing.Color.Chartreuse;
-            this.lbLed5.LedSize = new System.Drawing.SizeF(18F, 18F);
-            this.lbLed5.Location = new System.Drawing.Point(10, 153);
-            this.lbLed5.Name = "lbLed5";
-            this.lbLed5.Renderer = null;
-            this.lbLed5.Size = new System.Drawing.Size(30, 23);
-            this.lbLed5.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
-            this.lbLed5.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
-            this.lbLed5.TabIndex = 12;
-            this.lbLed5.VarName = "DO5";
-            // 
-            // lbLed4
-            // 
-            this.lbLed4.BackColor = System.Drawing.Color.Transparent;
-            this.lbLed4.BlinkInterval = 500;
-            this.lbLed4.Label = "";
-            this.lbLed4.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
-            this.lbLed4.LedColor = System.Drawing.Color.Chartreuse;
-            this.lbLed4.LedSize = new System.Drawing.SizeF(18F, 18F);
-            this.lbLed4.Location = new System.Drawing.Point(150, 104);
-            this.lbLed4.Name = "lbLed4";
-            this.lbLed4.Renderer = null;
-            this.lbLed4.Size = new System.Drawing.Size(30, 23);
-            this.lbLed4.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
-            this.lbLed4.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
-            this.lbLed4.TabIndex = 11;
-            this.lbLed4.VarName = "DO4";
-            // 
-            // lbLed3
-            // 
-            this.lbLed3.BackColor = System.Drawing.Color.Transparent;
-            this.lbLed3.BlinkInterval = 500;
-            this.lbLed3.Label = "";
-            this.lbLed3.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
-            this.lbLed3.LedColor = System.Drawing.Color.Chartreuse;
-            this.lbLed3.LedSize = new System.Drawing.SizeF(18F, 18F);
-            this.lbLed3.Location = new System.Drawing.Point(10, 104);
-            this.lbLed3.Name = "lbLed3";
-            this.lbLed3.Renderer = null;
-            this.lbLed3.Size = new System.Drawing.Size(30, 23);
-            this.lbLed3.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
-            this.lbLed3.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
-            this.lbLed3.TabIndex = 10;
-            this.lbLed3.VarName = "DO3";
-            // 
-            // lbLed2
-            // 
-            this.lbLed2.BackColor = System.Drawing.Color.Transparent;
-            this.lbLed2.BlinkInterval = 500;
-            this.lbLed2.Label = "";
-            this.lbLed2.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
-            this.lbLed2.LedColor = System.Drawing.Color.Chartreuse;
-            this.lbLed2.LedSize = new System.Drawing.SizeF(18F, 18F);
-            this.lbLed2.Location = new System.Drawing.Point(150, 52);
-            this.lbLed2.Name = "lbLed2";
-            this.lbLed2.Renderer = null;
-            this.lbLed2.Size = new System.Drawing.Size(30, 23);
-            this.lbLed2.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
-            this.lbLed2.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
-            this.lbLed2.TabIndex = 9;
-            this.lbLed2.VarName = "DO2";
-            // 
-            // lbLed1
-            // 
-            this.lbLed1.BackColor = System.Drawing.Color.Transparent;
-            this.lbLed1.BlinkInterval = 500;
-            this.lbLed1.Label = "";
-            this.lbLed1.LabelPosition = LBSoft.IndustrialCtrls.Leds.LBLed.LedLabelPosition.Top;
-            this.lbLed1.LedColor = System.Drawing.Color.Chartreuse;
-            this.lbLed1.LedSize = new System.Drawing.SizeF(18F, 18F);
-            this.lbLed1.Location = new System.Drawing.Point(10, 52);
-            this.lbLed1.Name = "lbLed1";
-            this.lbLed1.Renderer = null;
-            this.lbLed1.Size = new System.Drawing.Size(30, 23);
-            this.lbLed1.State = LBSoft.IndustrialCtrls.Leds.LBLed.LedState.Off;
-            this.lbLed1.Style = LBSoft.IndustrialCtrls.Leds.LBLed.LedStyle.Circular;
-            this.lbLed1.TabIndex = 8;
-            this.lbLed1.VarName = "DO1";
+            this.lightningChartUltimate1.BackColor = System.Drawing.Color.Gray;
+            this.lightningChartUltimate1.Background = ((Arction.WinForms.Charting.Fill)(resources.GetObject("lightningChartUltimate1.Background")));
+            this.lightningChartUltimate1.ChartManager = null;
+            this.lightningChartUltimate1.Location = new System.Drawing.Point(507, 499);
+            this.lightningChartUltimate1.MinimumSize = new System.Drawing.Size(110, 90);
+            this.lightningChartUltimate1.Name = "lightningChartUltimate1";
+            this.lightningChartUltimate1.Options = ((Arction.WinForms.Charting.ChartOptions)(resources.GetObject("lightningChartUltimate1.Options")));
+            this.lightningChartUltimate1.OutputStream = null;
+            this.lightningChartUltimate1.RenderOptions = ((Arction.WinForms.Charting.Views.RenderOptionsCommon)(resources.GetObject("lightningChartUltimate1.RenderOptions")));
+            this.lightningChartUltimate1.Size = new System.Drawing.Size(555, 245);
+            this.lightningChartUltimate1.TabIndex = 34;
+            this.lightningChartUltimate1.Title = ((Arction.WinForms.Charting.Titles.ChartTitle)(resources.GetObject("lightningChartUltimate1.Title")));
+            this.lightningChartUltimate1.View3D = ((Arction.WinForms.Charting.Views.View3D.View3D)(resources.GetObject("lightningChartUltimate1.View3D")));
+            this.lightningChartUltimate1.ViewPie3D = ((Arction.WinForms.Charting.Views.ViewPie3D.ViewPie3D)(resources.GetObject("lightningChartUltimate1.ViewPie3D")));
+            this.lightningChartUltimate1.ViewPolar = ((Arction.WinForms.Charting.Views.ViewPolar.ViewPolar)(resources.GetObject("lightningChartUltimate1.ViewPolar")));
+            this.lightningChartUltimate1.ViewSmith = ((Arction.WinForms.Charting.Views.ViewSmith.ViewSmith)(resources.GetObject("lightningChartUltimate1.ViewSmith")));
+            this.lightningChartUltimate1.ViewXY = ((Arction.WinForms.Charting.Views.ViewXY.ViewXY)(resources.GetObject("lightningChartUltimate1.ViewXY")));
             // 
             // FormTestRunning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(684, 543);
+            this.ClientSize = new System.Drawing.Size(1105, 758);
+            this.Controls.Add(this.lightningChartUltimate1);
+            this.Controls.Add(this.richTextBoxLog);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -1003,8 +826,6 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1029,10 +850,6 @@
         private LBSoft.IndustrialCtrls.Leds.LBLed lbLed8;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
@@ -1055,22 +872,6 @@
         private LBSoft.IndustrialCtrls.Leds.LBLed lbLed15;
         private LBSoft.IndustrialCtrls.Leds.LBLed lbLed16;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button button16;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button15;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.Button button13;
-        private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button button11;
@@ -1079,13 +880,15 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.TextBox textBox1;
-        private LBIndustrialCtrls.AnalogLable.DataScanner dataScanner8;
-        private LBIndustrialCtrls.AnalogLable.DataScanner dataScanner7;
-        private LBIndustrialCtrls.AnalogLable.DataScanner dataScanner6;
-        private LBIndustrialCtrls.AnalogLable.DataScanner dataScanner5;
         private LBIndustrialCtrls.AnalogLable.DataScanner dataScanner4;
         private LBIndustrialCtrls.AnalogLable.DataScanner dataScanner3;
         private LBIndustrialCtrls.AnalogLable.DataScanner dataScanner2;
         private LBIndustrialCtrls.AnalogLable.DataScanner dataScanner1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.RichTextBox richTextBoxLog;
+        private Arction.WinForms.Charting.LightningChartUltimate lightningChartUltimate1;
     }
 }
