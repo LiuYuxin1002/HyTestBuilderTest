@@ -17,10 +17,32 @@ namespace HyTestBuilderTest
 
         bool[] state = new bool[8];
 
+        System.Windows.Forms.Timer timer = new System.Windows.Forms.Timer();
+
         public FormTestRunning()
         {
             InitializeComponent();
             server.Run();
+            InitializeTimer();
+        }
+
+        private void InitializeTimer()
+        {
+            this.timer.Interval = 10;
+            this.timer.Tick += Timer_Tick;
+            userCurve1.SetLeftCurve("A", null, System.Drawing.Color.Red);
+            userCurve1.Title = "正弦波演示";
+            timer.Start();
+
+        }
+
+        int count = 0;
+        private void Timer_Tick(object sender, EventArgs e)
+        {
+            this.userCurve1.AddCurveData(
+                "A",
+                (float)Math.Sin(count++/50f)*100f
+                );
         }
 
         #region DO

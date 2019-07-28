@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTestRunning));
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -87,7 +85,7 @@
             this.lbLed16 = new LBSoft.IndustrialCtrls.Leds.LBLed();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.richTextBoxLog = new System.Windows.Forms.RichTextBox();
-            this.lightningChartUltimate1 = new Arction.WinForms.Charting.LightningChartUltimate();
+            this.userCurve1 = new LBIndustrialCtrls.AnalogLable.UserCurve();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -783,36 +781,25 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.richTextBoxLog.Location = new System.Drawing.Point(682, 28);
             this.richTextBoxLog.Name = "richTextBoxLog";
-            this.richTextBoxLog.Size = new System.Drawing.Size(411, 508);
+            this.richTextBoxLog.Size = new System.Drawing.Size(411, 269);
             this.richTextBoxLog.TabIndex = 33;
             this.richTextBoxLog.Text = "";
             // 
-            // lightningChartUltimate1
+            // userCurve1
             // 
-            this.lightningChartUltimate1.BackColor = System.Drawing.Color.Gray;
-            this.lightningChartUltimate1.Background = ((Arction.WinForms.Charting.Fill)(resources.GetObject("lightningChartUltimate1.Background")));
-            this.lightningChartUltimate1.ChartManager = null;
-            this.lightningChartUltimate1.Location = new System.Drawing.Point(507, 499);
-            this.lightningChartUltimate1.MinimumSize = new System.Drawing.Size(110, 90);
-            this.lightningChartUltimate1.Name = "lightningChartUltimate1";
-            this.lightningChartUltimate1.Options = ((Arction.WinForms.Charting.ChartOptions)(resources.GetObject("lightningChartUltimate1.Options")));
-            this.lightningChartUltimate1.OutputStream = null;
-            this.lightningChartUltimate1.RenderOptions = ((Arction.WinForms.Charting.Views.RenderOptionsCommon)(resources.GetObject("lightningChartUltimate1.RenderOptions")));
-            this.lightningChartUltimate1.Size = new System.Drawing.Size(555, 245);
-            this.lightningChartUltimate1.TabIndex = 34;
-            this.lightningChartUltimate1.Title = ((Arction.WinForms.Charting.Titles.ChartTitle)(resources.GetObject("lightningChartUltimate1.Title")));
-            this.lightningChartUltimate1.View3D = ((Arction.WinForms.Charting.Views.View3D.View3D)(resources.GetObject("lightningChartUltimate1.View3D")));
-            this.lightningChartUltimate1.ViewPie3D = ((Arction.WinForms.Charting.Views.ViewPie3D.ViewPie3D)(resources.GetObject("lightningChartUltimate1.ViewPie3D")));
-            this.lightningChartUltimate1.ViewPolar = ((Arction.WinForms.Charting.Views.ViewPolar.ViewPolar)(resources.GetObject("lightningChartUltimate1.ViewPolar")));
-            this.lightningChartUltimate1.ViewSmith = ((Arction.WinForms.Charting.Views.ViewSmith.ViewSmith)(resources.GetObject("lightningChartUltimate1.ViewSmith")));
-            this.lightningChartUltimate1.ViewXY = ((Arction.WinForms.Charting.Views.ViewXY.ViewXY)(resources.GetObject("lightningChartUltimate1.ViewXY")));
+            this.userCurve1.BackColor = System.Drawing.Color.Transparent;
+            this.userCurve1.Location = new System.Drawing.Point(682, 303);
+            this.userCurve1.Name = "userCurve1";
+            this.userCurve1.Size = new System.Drawing.Size(413, 225);
+            this.userCurve1.TabIndex = 34;
+            this.userCurve1.ValueMinLeft = -100F;
             // 
             // FormTestRunning
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1105, 758);
-            this.Controls.Add(this.lightningChartUltimate1);
+            this.ClientSize = new System.Drawing.Size(1105, 548);
+            this.Controls.Add(this.userCurve1);
             this.Controls.Add(this.richTextBoxLog);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -889,6 +876,6 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.RichTextBox richTextBoxLog;
-        private Arction.WinForms.Charting.LightningChartUltimate lightningChartUltimate1;
+        private LBIndustrialCtrls.AnalogLable.UserCurve userCurve1;
     }
 }
