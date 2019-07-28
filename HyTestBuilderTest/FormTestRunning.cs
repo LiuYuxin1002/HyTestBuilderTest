@@ -42,7 +42,7 @@ namespace HyTestBuilderTest
             this.userCurve1.AddCurveData(
                 "A",
                 (float)Math.Sin(count++/50f)*100f
-                );
+            );
         }
 
         #region DO
